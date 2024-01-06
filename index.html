@@ -293,7 +293,7 @@
                         </div>
                         <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
                             <div class="col-8">
-                                <img src="assets/Icons.png" style="width: 200px ">
+                                <img src="assets/Icons.png" class="w-100">
                             </div>
                             <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
                                 <h4 class="profissionalTextHeading">Great Salary & Perks</h4>
@@ -308,7 +308,7 @@
                         </div>
                         <div class="row px-4 pt-5 align-items-center justify-content-center justify-content-md-end">
                             <div class="col-8">
-                                <img src="assets/Group 251.png" style="width: 200px ">
+                                <img src="assets/Group 251.png" class="w-100">
                             </div>
                             <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
                                 <h4 class="profissionalTextHeading">Accelerated Growth Path</h4>
@@ -323,7 +323,7 @@
                         </div>
                         <div class="row px-4 py-5 align-items-center justify-content-center justify-content-md-start">
                             <div class="col-8">
-                                <img src="assets/Group 294.png" style="width: 200px ">
+                                <img src="assets/Group 294.png" class="w-100">
                             </div>
                             <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
                                 <h4 class="profissionalTextHeading">Build a Solid Profile</h4>
@@ -338,7 +338,7 @@
                         </div>
                         <div class="row px-4 pt-5 align-items-center justify-content-center justify-content-md-end">
                             <div class="col-8">
-                                <img src="assets/Group 257.png" style="width: 200px ">
+                                <img src="assets/Group 257.png" class="w-100">
                             </div>
                             <div class="col-12 col-md-7 mt-5 text-center" style="min-height: 150px">
                                 <h4 class="profissionalTextHeading">Achieve the Extra-Ordinary</h4>
@@ -649,8 +649,8 @@
           <div class="container d-bock d-md-none py-5">
               <div class="row js-scroll fade-in-bottom">
                   <div class="col-12 mainHeading text-white text-center"> Let us see<br>how we do it?</div>
-                  <div class="row justify-content-center py-5">
-                      <div class="rocketText">
+                  <div class="d-flex justify-content-center py-5 px-4">
+                      <div class="rocketText"  style="width: 350px">
                         <img src="assets/rocket.png" class="rocket-img" v-if="loadingRocket">
                         <div class="w-100 h-100 text-center" v-if="!loadingRocket && stage == '1'">
                             <h6 class="rocketTextHeading">Fintech Domain Sessions</h6>
@@ -1591,7 +1591,7 @@
               handleScrollAnimation(selectedClass) {
                 const scrollElements = document.querySelectorAll(selectedClass);
                 scrollElements.forEach((el) => {
-                  if (this.elementInView(el, 1.6)) {
+                  if (this.elementInView(el, 1.4)) {
                     el.classList.add("active")
                   } else if (this.elementOutofView(el)) {
                     el.classList.remove("active");
